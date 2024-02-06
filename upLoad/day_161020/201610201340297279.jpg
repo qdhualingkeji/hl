@@ -1,0 +1,351 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <base href="http://www.yofogo.com:80/"/>
+    
+    <title>有享网</title>
+    
+	<meta http-equiv="pragma" content="no-cache"/>
+	<meta http-equiv="cache-control" content="no-cache"/>
+	<meta http-equiv="expires" content="0"/>    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3"/>
+	<meta http-equiv="description" content="This is my page"/>
+    <link rel="stylesheet" href="http://css.yofogo.com/index.css" type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="http://css.yofogo.com/new_style.css" type="text/css" media="screen" charset="utf-8"/>
+<style>
+	.pr_flashNews{border:0px;}
+</style>
+  </head>
+  
+<body class="bg-alt">
+
+
+
+
+
+
+<link rel="shortcut icon" href="favicon.ico" />
+<script type="text/javascript" src="http://js.yofogo.com/cookie.js"></script>
+<script type="text/javascript" src="js/top_yzz.js"></script>
+<script type="text/javascript" src="http://js.yofogo.com/jquery-1.4.2.js"></script>
+	<link rel="stylesheet" href="http://css.yofogo.com/baseTop.css" type="text/css"></link>
+	<script src="http://js.yofogo.com/top-com.js?key=0606" type="text/javascript"></script>
+	<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+ <!--
+<script type="text/javascript" src="js/cookie.js"></script>
+<script type="text/javascript" src="js/top_yzz.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+-->
+<div class="header_bg" id="top">
+    <div class="header" style="background: #FFFFFF;">
+      
+        <DIV style="BACKGROUND: url(http://image2.yofogo.com/top.png) repeat-x right top; HEIGHT: 40px;">
+        <div class="inner Fix">
+			
+	    	<span class="tagline">您好，欢迎光临有享团！</span>
+			<ul class="user-action hd-menu">
+				<li class="user-login first">
+					<a href="http://sso.yofogo.com/ssoserver/login?service=http://www.yofogo.com:80/Group_HomeDetailed.action"><span style="color:#B30004">请登录</span></a></li>
+				<li class="user-signup">
+					<a href="http://login.yofogo.com/"><span style="color:#B30004">免费注册</span></a></li>
+				<li class="user-signup">
+					<!-- <a href="http://new.yofogo.com/" target="_blank" style="color:#F60;">送50元新人红包</a> --></li></ul>
+			
+			<ul class="quick-menu">
+				<li class="q-subscribe J_menu">
+					<a target="_parent" href="http://user.yofogo.com:80/" id="J_sub" href="javascript:" class="menu-hd J_trigger" onmousemove="showMenus(this,'divMyYofogo')">我的有享<b></b></a>
+				<div class="menu-bd pop-panel_list J_list Hide" style="display: none;" id="divMyYofogo">
+				    	<a target="_parent" href="https://sso.yofogo.com/ssoserver/login?service=http://user.yofogo.com:80/group_load_orders">我的订单</a><div style="height:4px;line-height:4px;"></div>
+				        <a target="_parent" href="https://sso.yofogo.com/ssoserver/login?service=http://user.yofogo.com:80/coupons_statisticCoupons">我的红包</a><div style="height:4px;line-height:4px;"></div>
+				        <a target="_parent" href="https://sso.yofogo.com/ssoserver/login?service=http://user.yofogo.com:80/golds_statisticGolds">我的积分</a></div>
+				</li>
+				<li style="text-align:right;"><a onclick="collectGroupT();return false;" style="padding-left:4px; padding-right:4px;" href="javascript:void(0);">收藏本站</a></li>
+				<li class="q-attention J_menu">
+					<a href="javascript:" class="menu-hd J_trigger" onmousemove="showMenus(this,'divKHServices')">客户服务<b></b></a>
+				    <div class="menu-bd J_list Hide" style="display: none;" id="divKHServices" >
+				    <!-- http://wpa.qq.com/msgrd?v=3&uin=4008807667&site=qq&menu=yes -->
+					<a target="_blank" href="http://b.qq.com/webc.htm?new=0&sid=4008807667&o=有享网&q=7"><span class="icon qzone"></span>在线客服</a><div style="height:4px;line-height:4px;"></div>
+				        <a target="_blank" href="http://mall.yofogo.com/th_helpcenter_findArt?aid=6"><span class="icon bangzhu"></span>帮助中心</a><div style="height:4px;line-height:4px;"></div>
+				        <a target="_blank" href="http://mall.yofogo.com/weixin/index.jsp"><span class="icon sina"></span>官方微信</a><div style="height:4px;line-height:4px;"></div>
+				        <table cellpadding="0" cellspacing="0"><tr><td><span class="icon dianhua"></span></td><td><span style="color:#FF6619;width: 30px;font: normal 12px/1.5 宋体,Arial,Helvetica,sans-serif;">4008807667</span></td></tr></table></div>
+				</li>
+				<li class="q-dp J_menu">
+					<a rel="nofollow" href="javascript:" class="menu-hd J_trigger" onmousemove="showMenus(this,'divWebNavigation')" id="divWebNavigationMain">网站导航<b></b></a>
+					<div class="menu-bd pop-panel_list J_list Hide" style="display: none;" id="divWebNavigation" >
+				    	<a href="http://mall.yofogo.com" target="_blank">有享商城</a><div style="height:4px;line-height:4px;"></div>
+				        <!-- <a href="https://www.yofopay.com:8443/" target="_blank">1卡通</a><div style="height:4px;line-height:4px;"></div> -->
+				        <a target="_blank" href="http://www.yofogo.com">有享团</a><div style="height:4px;line-height:4px;"></div>
+				        <a target="_blank" href="http://live1.yofogo.com:8088/">享自游</a></div>
+				</li>
+				<li style="width:68px;padding-top:4px;"><wb:follow-button uid="2156955070" type="red_1" width="67" height="24" ></wb:follow-button></li>
+			</ul>
+		</div>
+		</DIV>
+	<!-- <div style="text-align: center; font-weight:bold; border:1px #FAC77F solid; width: 1024px; color:red; background: #FFFFE1; padding-top:7px; height: 20px;margin: 0 auto; margin-bottom:10px;">
+		受台风影响，人员出行困难，故决定取消中秋客服值班。给您带来困扰深感抱歉！
+	</div> -->
+     <!--  <div class="topimg"><img src="http://image.yofogo.com/topimg.jpg"  /></div>-->
+      <!-- logo search cart begin -->
+	
+    <div class="top_middle_bg"  style="background:url(images/hbg.gif) repeat-x scroll right top;">
+      <div class="top_middle">
+        <h1 class="logo"><div class="chenshi" style="text-align:center;color:#FFFFFF; font-size:12px; z-index:100;">
+        <script type="text/javascript">
+	       /* function getCommon_SiteName(){
+	        	var top_stie_name=getCookie("YZZ_INDEX_VISTS_SITE_NAME");
+	        	var top_stie_ocde=getCookie("YZZ_CURR_VISTS_SITE_CODE");
+	        	var is_All="" || false;
+	        	//if(is_All || !top_stie_name)top_stie_name="全国";
+	        	if(is_All){
+		        	top_stie_name="全国";
+		        	top_stie_ocde="china";
+	        	}else{
+		        	var isCity="";
+		        	var isCiteName="";
+		        	if(isCiteName!="") top_stie_name=isCiteName;
+		        	else{
+			        	if(isCity && isCity!="china" && top_stie_name=="全国"){
+			        		top_stie_ocde=isCity;
+			        		$.ajax({type:"POST",url: "Group_findSitesName",data: "site="+isCity,async: false,
+								success: function(msg){top_stie_name=msg;}
+		    				});
+				        }
+		        	}
+	        	}
+	        	setCookie("YZZ_INDEX_VISTS_SITE_NAME",top_stie_name,30);
+	        	setCookie("YZZ_CURR_VISTS_SITE_CODE",top_stie_ocde,30);
+	        	return top_stie_name;
+	        }*/
+	        function getCommon_siteNameForCode(code){
+		        if(!code || code=="china") return "全国";
+		        else if(code=="ningbo") return "宁波";
+		        else if(code=="hengyang") return "衡阳";
+		        else if(code=="hainan") return "海南";
+		        else return null;
+		    }
+	        function getCommon_SiteName1(){
+	        	var top_stie_name=getCookie("YZZ_INDEX_VISTS_SITE_NAME");
+	        	var top_stie_ocde=getCookie("YZZ_CURR_VISTS_SITE_CODE");
+	        	var is_All="" || false;
+	        	if(is_All){
+		        	top_stie_name="全国";
+		        	top_stie_ocde="china";
+	        	}else{
+		        	var isCity="";
+		        	var isCiteName="";
+		        	if(isCiteName!=""){
+			        	top_stie_ocde=isCity;
+			        	 top_stie_name=isCiteName;
+		        	}else{
+		        		if(!isCity || isCity=="china"){
+				        	top_stie_name="全国";
+				        	top_stie_ocde="china";
+		        		}else{
+			        		top_stie_ocde=isCity;
+			        		top_stie_name=getCommon_siteNameForCode(top_stie_ocde);
+			        		if(!top_stie_name){
+				        		$.ajax({type:"POST",url: "Group_findSitesName",data: "site="+isCity,async: false,
+									success: function(msg){top_stie_name=msg;}
+			    				});
+			        		}
+				        }
+		        	}
+	        	}
+	        	setCookie("YZZ_INDEX_VISTS_SITE_NAME",top_stie_name,30);
+	        	setCookie("YZZ_CURR_VISTS_SITE_CODE",top_stie_ocde,30);
+	        	return top_stie_name;
+	        }
+        	//document.write(getCommon_SiteName1());
+        </script>
+        <a id="aChangeCity" href="javascript:void(0);" onclick="changeSiteLoad()" style="color:#FFFFFF; font-weight:lighter;">
+        <script type="text/javascript">
+        var curr_siteCode1="";
+        if(curr_siteCode1==null || curr_siteCode1=="")
+        	document.write("[全国]");
+        else
+        	document.write("["+getCommon_SiteName1()+"]");
+        </script>                        
+        </a></div>
+        <div class="chenshitis" style="text-align:center;color:#555555; font-size:12px; z-index:100;font-weight:lighter; line-height:22px;">&nbsp;请点击这里切换城市</div>
+        <a href="Group_HomeDetailed.action" id="aLogoUrl" target="_parent"><img src="http://image.yofogo.com/logo.gif?cah=123" alt="" /></a></h1>
+        <div class="nav-container">
+          <div class="listt" style="float:left;"><a href="http://www.yofogo.com:80/china" id="aIndexUrl" target="_parent">首页</a></div>
+          <div class="listt" style="float:left;display: none;" id="aTGJPUrl_parent"><a href="/china/A0" id="aTGJPUrl" target="_parent">团购精选</a></div>
+          <div class="listt" style="float:left;display: none;" id="aBDSHUrl_parent"><a href="/ningbo/S0" id="aBDSHUrl" target="_parent">本地生活</a></div><div style="display:none;" id="aBDSHUrl_hot" class="hot123"></div><!-- 因位置问题下，下年会交换 -->
+          <div class="listt" style="float:left;"><a href="before/a/items" id="aWangQiList" target="_blank">往期团购</a></div>
+          <!-- <div class="listt" style="float:left;"><a href="regist_vip.jsp" target="_blank">团购指南</a></div> -->
+          
+          <div class="listt" style="float:left;"><a href="http://mall.yofogo.com" target="_blank">有享商城</a></div>
+		  <div class="listt" style="float:left;"><a href="http://live.yofogo.com/" target="_blank">享自游</a></div>
+		  
+		  <!-- <div class="listt" style="float:left;"><a href="http://pk.yofogo.com/" target="_blank">风云榜</a></div><div id="div_fyb_hot" class="hot123_fyb2"></div> -->
+		  <div class="listt" style="float:left;"><a href="http://loveroom.yofogo.com/" target="_blank">公益店</a></div>
+		  <div class="listt" style="float:left;"><a href="http://mall.yofogo.com/hd/14/0312/index.jsp" target="_blank">品牌街</a></div>
+		  <div class="listt" style="float:left;"><a href="http://ys.yofogo.com" target="_blank">有享云商</a></div>
+		  
+		  <div id="minicart" class="topcart">
+<table cellpadding="0" cellspacing="0" width="265" style="background-image:url(images/ssk.jpg)">
+	<tr>
+		<td height="33" width="37" style="border: 0 solid #DDDDDD;padding: 0px 0px;">&nbsp;</td>
+		<td height="33" width="153" style="border: 0 solid #DDDDDD;padding: 0px 0px;">
+		<input class="sb-input" style="outline: 0;" id="cableName" name="cableName" onfocus="if(this.value=='请输入正确的商品名称'){this.value='';};" onblur="if(this.value==''){this.value='请输入正确的商品名称';};" 
+			value="请输入正确的商品名称" type="text"></td>
+		<td height="33" width="73" style="border: 0 solid #DDDDDD;padding: 0px 0px;"><a onclick="cable()" target="_parent"><img src="http://image.yofogo.com/a.gif" width="68" height="27" border="0" /></a></td>
+	</tr>
+</table>
+        </div>
+        </div>
+        
+        <!-- logo search cart over -->
+      </div>
+      </div>
+      <!-- 导航栏 begin -->
+      <!-- 导航栏 over -->
+    </div>
+    <DIV id="switchcity" style="display: none;width:120px;">
+	<UL class="clearfix" id="topSiteNames"></UL>
+	 </DIV>
+  </div>
+
+    <script language="javascript" type="text/javascript">
+ 	/*var loUrl=window.location.href;
+ 	if(loUrl.indexOf("Group_HomeDetailed.action")>0){
+ 		document.getElementById("one").className="b-1";
+ 	}else if(loUrl.indexOf("Group_list_group_Item.action")>0){
+ 		document.getElementById("two").className="b-2";
+ 	}else if(loUrl.indexOf("regist_vip.jsp")>0){
+ 		document.getElementById("three").className="b-3";
+ 	}else if(loUrl.indexOf("regist_common.jsp")>0){
+ 		document.getElementById("three").className="b-3";
+ 	}else if(loUrl.indexOf("dlzn.jsp")>0){
+ 		document.getElementById("three").className="b-3";
+ 	}else if(loUrl.indexOf("process.jsp")>0){
+ 		document.getElementById("three").className="b-3";
+ 	}else if(loUrl.indexOf("czlc.jsp")>0){
+ 		document.getElementById("three").className="b-3";
+ 	}else if(loUrl.indexOf("zflc.jsp")>0){
+ 		document.getElementById("three").className="b-3";
+ 	}else{
+ 		document.getElementById("one").className="b-1";
+ 	}*/
+ 	
+ 	var curr_siteCode="";
+ 	//var curr_siteCode="china";//默认都为全国团
+ 	function yzz_top_changeNUrl(){
+ 	 	if(curr_siteCode=="") curr_siteCode=getCookie("YZZ_INDEX_VISTS_CURR_SITE_CODE");
+ 		$("#aIndexUrl").attr("href",curr_siteCode);
+ 		$("#aLogoUrl").attr("href",curr_siteCode);
+		if(curr_siteCode!="" && curr_siteCode!="china"){//是站点
+			$("#aWangQiList").attr("href","before/s/items");
+			//$("#aTGJPUrl_parent").show();
+			$("#aTGJPUrl").attr("href",curr_siteCode+"/A0");
+			//$("#aBDSHUrl_parent").show();
+			$("#aBDSHUrl").attr("href",curr_siteCode+"/S0");
+			$("#aBDSHUrl_hot").show();
+			document.getElementById("div_fyb_hot").className="hot123_fyb1";
+		}
+	 }
+ 	yzz_top_changeNUrl();
+
+ 	function collectGroupT(url,title){
+ 	 	var url="http://www.yofogo.com/";
+ 	 	var title="有享网——有精彩，齐分享";
+ 	    var ctrl = (navigator.userAgent.toLowerCase()).indexOf('mac') != -1 ? 'Command/Cmd': 'CTRL';
+ 	    try{
+ 	        if (document.all) { //IE类浏览器
+ 	        	try{
+ 	                window.external.addFavorite(url, title);
+ 	            }catch (e){
+ 	            	try {
+ 	                    window.external.addToFavoritesBar(url, title);  //IE8
+ 	                }catch (e){
+ 	 	            	try {
+	 	 	 	            window.sidebar.addPanel(title,url, "");
+ 	                	}catch (e){
+	 	                    window.external.toString(); //360浏览器不支持window.external，无法收藏
+						}
+ 	            	}
+ 	            }
+ 	        }else if (window.sidebar) { //firfox等浏览器
+ 	            window.sidebar.addPanel(title,url, "");
+ 	        }else {  
+ 	            alert('您可以尝试通过快捷键  ctrl + D 加入到收藏夹~') ;
+ 	        }
+ 	    }catch (e){
+ 	        window.alert("添加收藏失败！");
+ 	    }
+ 	}
+ </script>
+<div class="service-promise" style="color: red;font-size: 14px">
+<!-- bdw end -->
+<img src="images/404-1.jpg" width="601" height="225" /></div>
+
+<style type="text/css">
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+</style>
+<div class="footer-inner">
+			<div class="declare">
+			  <div class="support" style="padding-left: 45px;">
+			    <div class="st-hotline"><img src="http://image.yofogo.com/dblogo.jpg"/></div>
+			    <span class="main"></span>
+			    <div class="st-feedback"> <a href="#"></a> </div>
+			    <dl class="st-pay">
+                                <dt><span>用户帮助</span></dt>
+                                <dd><b></b><a href="protocol.jsp" target="_blank">团购用户协议</a></dd>
+                              <dd><b></b><a href="regist_vip.jsp" target="_blank">会员帮助</a> </dd>
+							  <dd><b></b><a href="back.jsp" target="_blank">退换货制度</a> <a href="#"></a></dd>
+							  
+							  <dd><b></b><a href="Csd_loadAnswers.action" target="_blank">常见问题</a></dd>
+                </dl>
+                            <dl class="st-service">
+                                <dt><span>商务合作</span></dt>
+                                <dd><b></b><a href="http://login.yofogo.com/cooperation.jsp" target="_blank" alt="有享网，有精彩，齐分享">市场合作</a></dd>
+                            </dl>
+                            <dl class="st-support">
+                                <dt><span>公司信息
+</span></dt>
+                                <dd><b></b><a href="about.jsp" target="_blank">关于有享</a></dd>
+                              <dd><b></b><a href="flsm.jsp" target="_blank">法律声明</a></dd>
+							  <dd><b></b><a href="contect.jsp" target="_blank">联系我们</a></dd>
+							  <dd><b></b><a href="Message.jsp" target="_blank">给我留言</a></dd>
+                            </dl>
+              </div>
+  </div>            <div class="copyright">
+    <div>
+      <table cellpadding="0" cellspacing="0" width="1000" height="104">
+        <tr>
+          <td height="48" align="center">
+          <div style="color:#666666; font-size:12px;">
+				<a target="_blank" href="http://mall.yofogo.com/">有享商城</a>&nbsp;&nbsp;
+				<img src=" http://image2.yofogo.com/bar.gif"/>&nbsp;&nbsp;
+				<a target="_blank" href="http://live.yofogo.com/">享自游</a>&nbsp;&nbsp;
+				<img src=" http://image2.yofogo.com/bar.gif"/>&nbsp;&nbsp;
+				<a target="_blank" href="http://www.yofoto.cn/">三生（中国）官网</a>
+				<img src=" http://image2.yofogo.com/bar.gif"/>&nbsp;&nbsp;
+				<a target="_blank" href="http://online.yofoto.cn/">远程培训中心</a></div>
+          <p align="center">　 <span>Copyright@2011 - 2020 宁波三生电子商务有限公司 版权所有 未经许可不得转载或连接</span>  <a href="http://www.miitbeian.gov.cn/" target="_blank">浙ICP备12016872号-1</a>&nbsp;增值电信业务经营许可证：浙B2-20130039</p>
+          <p align="center">
+          <img src="http://img3.yofogo.com/common/i_lo2.gif" border="0" alt="网络工商" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="javascript:void(0)" title="360绿色网站"><img src="http://img3.yofogo.com/common/360.png" border="0" alt="360绿色网站" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <!-- <a href="https://ss.knet.cn/verifyseal.dll?sn=e12032233020015176307708&ct=df&a=1&pa=882293" target="_blank" title="可信网站"><img src="http://img3.yofogo.com/common/kxwz.jpg" border="0" /></a> -->
+          <!-- https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&dn=sso.yofogo.com&lang=zh_cn -->
+          <a href="javascript:void(0)"><img src="http://img3.yofogo.com/common/renz.jpg" border="0" /></a></p></td>
+        </tr>
+      </table>
+    </div>
+  </div></div>
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc823f003cda7b760865179ff2dbe05c8' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<!-- 156 -->
+</body>
+</html>

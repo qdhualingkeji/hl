@@ -1,0 +1,18 @@
+     <div class="leftnav">
+			<h2>解决方案</h2>
+			<ul>    		            
+            {aspcms:navlist type=14}
+				<li><a title="[navlist:name]" href="[navlist:link]" {if:[navlist:sortid]=[navlist:cursortid]} style="color:#a71d0f"{end if}>[navlist:name]</a> </li>
+			{/aspcms:navlist}
+		  </ul>  
+		</div>
+		<div class="lxfs">
+			<h2>联系方式</h2>
+			<p>电话：{aspcms:companyphone} </p>
+			<p>传真：{aspcms:companyfax}</p>
+			<p>邮箱：{aspcms:companyemail} </p>
+			<p>商话1：{aspcms:companymobile}</p>
+			<p>商话2：{aspcms:companycontact}</p>
+			<p>地址：{aspcms:companyaddress} </p>
+		</div>
+		 

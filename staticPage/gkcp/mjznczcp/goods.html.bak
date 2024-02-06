@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+ <head>
+<title>首页-工控产品-门禁智能称重产品</title>
+<meta name="Keywords" content="LED、屏幕、门禁、收发卡、二维码、地磅、设备、光栅、探测器、一体机、读取器、读卡器、道闸机、道闸、雷达
+、扫描器" >
+<meta name="Description" content="" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="http://www.qdhualing.com/Templates/green/css/style.css"/>
+<!--js 部分-->
+<script type="text/javascript" src="http://www.qdhualing.com/Templates/green/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://www.qdhualing.com/Templates/green/js/myfocus-2.0.1.min.js"></script>
+<script type="text/javascript">
+function AutoResizeImage(maxWidth,maxHeight,objImg){
+	var img = new Image();
+	img.src = objImg.src;
+	var hRatio;
+	var wRatio;
+	var Ratio = 1;
+	var w = img.width;
+	var h = img.height;
+	wRatio = maxWidth / w;
+	hRatio = maxHeight / h;
+	if (maxWidth ==0 && maxHeight==0){
+	Ratio = 1;
+	}else if (maxWidth==0){//
+	if (hRatio<1) Ratio = hRatio;
+	}else if (maxHeight==0){
+	if (wRatio<1) Ratio = wRatio;
+	}else if (wRatio<1 || hRatio<1){
+	Ratio = (wRatio<=hRatio?wRatio:hRatio);
+	}
+	if (Ratio<1){
+	w = w * Ratio;
+	h = h * Ratio;
+	}
+	objImg.height = h;
+	objImg.width = w;
+}
+
+function BtnOK(id){
+	$("#good_nav .item_div").attr("class","item_div unSelected");
+	$("#good_nav #item_div"+id).attr("class","item_div selected");
+
+	var pnSpan=$("#pos_nav_span");
+	var gpList=$("#good_picture");
+	pnSpan.empty();
+	gpList.empty();
+	var pnHtml="";
+	var itemHtml="";
+	if(id==1){
+		pnHtml+="LED大屏";
+
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=10\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008200006.jpg\" style=\"width: 230px;height: 165px;\">";
+				itemHtml+="<p>3.75室内双色led显示屏</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=11\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008250003.jpg\" style=\"width: 251px;height: 165px;\">";
+				itemHtml+="<p>户外p10单色led显示屏</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+	}
+	else if(id==2){
+		pnHtml+="门禁产品";
+
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=1\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008130001.jpg\" style=\"width:113px;height:165px;\">";
+				itemHtml+="<p>CVR-100UC身份证读取器</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=7\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008170001.jpg\" style=\"width:110px;height:165px;\">";
+				itemHtml+="<p>智能道闸机</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=2\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008130002.jpg\" style=\"width:113px;height:165px;\">";
+				itemHtml+="<p>道闸雷达</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+		//http://www.qianjingkeji.com/huashiyueduqi/CVR-100UC.html
+	}
+	else if(id==3){
+		pnHtml+="自动收发卡系列";
+
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=3\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008130003.jpg\" style=\"width:130px;height:165px;\">";
+				itemHtml+="<p>CQ-35LT规格IC读卡器</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=8\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008180001.png\" style=\"width: 174px;height:165px;\">";
+				itemHtml+="<p>CQ-591-MR01-EBNJ 收发卡机</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+	}
+	else if(id==4){
+		pnHtml+="二维码流程控制产品";
+
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=4\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008130004.png\" style=\"width: 182px;height:165px;\">";
+				itemHtml+="<p>NLS-FM430固定式条码扫描器</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=5\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008130005.jpg\" style=\"width: 165px;height:165px;\">";
+				itemHtml+="<p>NLS-MT60E(4G)_Datasheet_cn 4寸安卓</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+	}
+	else if(id==5){
+		pnHtml+="地磅产品";
+
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=12\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008270001.jpg\" style=\"width: 268px;height:165px;\">";
+				itemHtml+="<p>汽车衡器</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=13\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008270002.jpg\" style=\"width: 268px;height:165px;\">";
+				itemHtml+="<p>地磅</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=14\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008270003.jpg\" style=\"width: 268px;height:165px;\">";
+				itemHtml+="<p>汽车地磅</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=15\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008270004.jpg\" style=\"width: 268px;height:165px;\">";
+				itemHtml+="<p>电子汽车衡器</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+	}
+	else if(id==6){
+		pnHtml+="其他设备";
+
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=6\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008130006.jpg\" style=\"width: 165px;height:165px;\">";
+				itemHtml+="<p>互射式红外光栅防盗探测器</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+		itemHtml+="<div>";
+			itemHtml+="<a href=\"gooddetail.html?id=9\">";
+				itemHtml+="<img src=\"../../UpFiles/File/202008180073.png\" style=\"width: 223px;height:165px;\">";
+				itemHtml+="<p>经销出入口补光抓拍一体机</p>";
+			itemHtml+="</a>";
+		itemHtml+="</div>";
+	}
+	pnSpan.text(pnHtml);
+	gpList.append(itemHtml);
+}
+
+function dropMenu(obj){
+	$(obj).each(function(){
+		var theSpan = $(this);
+		var theMenu = theSpan.find(".submenu");
+		var tarHeight = theMenu.height();
+		theMenu.css({height:0,opacity:0});
+		
+		var t1;
+		
+		function expand() {
+			clearTimeout(t1);
+			theSpan.find('a').addClass("selected");
+			theMenu.stop().show().animate({height:tarHeight,opacity:1},0);
+			
+		}
+		
+		function collapse() {
+			clearTimeout(t1);
+			t1 = setTimeout(function(){
+				theSpan.find('a').removeClass("selected");
+				theMenu.stop().animate({height:0,opacity:0},0,function(){
+					$(this).css({display:"none"});
+				});
+			}, 0);
+		}
+		
+		theSpan.hover(expand, collapse);
+		theMenu.hover(expand, collapse);
+	});
+}
+
+function getQueryString(name){
+	 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	 var r = window.location.search.substr(1).match(reg);
+	 if(r!=null)return  unescape(r[2]); return null;
+}
+
+$(document).ready(function(){
+	dropMenu(".drop-menu-effect");
+	var id=getQueryString("id");
+	BtnOK(id);
+});
+</script>
+<style type="text/css">
+.parent{ font-weight:700}
+.sub{ text-indent:5px; }
+.hover{ color:#a71d0f}
+.container {
+    width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.body {
+	width:1170px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    clear: both;
+    margin-bottom: 15px;
+}
+#pt {
+    padding: 40px 0;
+    font-size: 13px;
+}
+#pt span:last-child {
+    color: #0067B2;
+}
+#good_nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+a {
+    color: #428bca;
+}
+#good_nav .item_div{
+	width:240px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	color:#000;
+	cursor:pointer;
+}
+#good_nav .unSelected{
+	background-color:rgb(241,241,241);
+}
+#good_nav .selected{
+	background-color:#0067b2;
+}
+
+#good_picture {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#good_picture div {
+    width: 33%;
+    text-align: center;
+}
+#good_picture img {
+    width: 70%;
+}
+#good_picture p {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+</style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ac7307581f39576782d4b1f0cea54c2c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+<!--toubu-->
+<script type="text/javascript">
+$(function(){
+var tabTitle = ".tab  span";
+var tabContent = ".tab .shen";
+$(tabTitle + ":first").addClass("on");
+$(tabContent).not(":first").hide();
+$(tabTitle).unbind("hover").bind("hover", function(){
+var text = $(this).text();
+$(this).siblings("span").removeClass("on").end().addClass("on");
+if(text == "行业应用"){
+	$(".amore").attr("href","/about/?14.html")
+}else{
+	$(".amore").attr("href","/newslist/?109_1.html")
+}
+
+
+var index = $(tabTitle).index( $(this) );
+$(tabContent).eq(index).siblings(tabContent).hide().end().show();
+});
+
+$(".topn").toggle(function(){
+	$(this).next("ul").show();
+},function(){
+	$(this).next("ul").hide();
+})
+
+});
+</script>
+<style type="text/css">
+.sunnav{ display:none}
+</style>
+<!--top部分-->
+<div class="index_nav">
+  <div class="fixed_contant clearfix"> 
+    
+    <!--logo 部分--> 
+    <a href="/" class="logo"><img src="http://www.qdhualing.com/templates/green/images/logo.png" style="height:70px;margin-top:10px"/></a> 
+    
+    <!--top链接部分--> 
+    <div class="site_nav">
+    <!--<ul class="clearfix">
+    	<li><a href="/about/?8.html">公司简介</a></li><li><a href="/about/?65.html">联系我们</a></li><li><a href="/about/?5.html">技术服务</a></li><li><a href="/about/?1.html" style="border-right:none">行业应用</a></li>
+    </ul>-->
+    <img src="http://www.qdhualing.com/templates/green/images/header_tel.png" class="tel" style="margin-top:40px;"/>
+    </div>
+    
+  </div>
+</div>
+
+<!--nav部分  class="selected2" -->
+<div class="nav">
+  <ul class="nav_list clearfix">
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/" ><span>首页</span></a></li>
+	
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/about/?8.html"  >公司简介</a> 
+    </li>
+    
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/about/?14.html"  >解决方案</a>
+      <ul class="submenu" >
+        <li><a href="http://www.qdhualing.com/about/?172.html">WMS管理系统解..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?170.html">厂区人员定位系统..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?167.html">园林树木二维码溯..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?154.html">产品二维码信息查..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?175.html">辰麒智能称重管理..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?163.html">扫二维码查看说明..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?161.html">二维码防伪查询系..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?152.html">产品赋码追溯系统..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?162.html">二维码商品信息查..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?153.html">石墨负极材料生产..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?159.html">电厂DCS自动化..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?160.html">共享医疗器械二维..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?101.html">润滑油行业自动化..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?139.html">锅炉行业自动化控..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?110.html">脱硝自动化控制系..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?146.html">农药生产制剂自动..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?140.html">减水剂行业自动化..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?141.html">硫磺制酸工程自动..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?142.html">甲醛生产自动化控..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?143.html">轻工制药行业典型..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?144.html">炼油石化行业典型..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?100.html">新能源行业自动化..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?99.html">医疗化工行业控制..</a></li>
+        
+        
+      </ul>
+       
+    </li>
+    
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/newslist/?109_1.html"  >工业4.0</a>
+      <ul class="submenu" >
+        <li><a href="http://www.qdhualing.com/about/?169.html">工业物联网数据采..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?147.html">工业4.0概念简..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?148.html">实施案例..</a></li>
+        
+        
+      </ul>
+       
+    </li>
+    
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/productlist/?4_1.html"  >工控产品</a>
+      <ul class="submenu" >
+		<li><a href="http://www.qdhualing.com/staticPage/gkcp/mjznczcp/goods.html?id=1">门禁智能称重产品..</a></li>
+
+        <li><a href="http://www.qdhualing.com/staticPage/gkcp/ewmpmj/goods.html?id=7">二维码喷码机..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?173_1.html">辰麒仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?94_1.html">HCP仪器仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?95_1.html">上润仪器仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?155_1.html">控制柜、配电箱..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?156_1.html">分析仪器..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?158_1.html">监控设备..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?157_1.html">无线设备..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?97_1.html">流量仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?96_1.html">称重仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?98_1.html">变频器..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?145_1.html">无线仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?168_1.html">昆仑通态触摸屏..</a></li>
+        
+        
+      </ul>
+       
+    </li>
+    
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/about/?5.html"  >技术服务</a> 
+    </li>
+    
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/about/?65.html"  >联系我们</a> 
+    </li>
+    
+  </ul>
+</div>
+
+<div class="container-fluid">
+	<div class="row" id="picture">
+		<img src="../../img/202008110001.png">
+	</div>
+</div>
+<!--end toubu-->
+<div class="container">
+	<div class="row" id="pt">
+		<img src="../../img/202008110003.png" alt="">
+		<span class="gkcp_pos_nav_span"><a href="goods.html?id=1">工控产品&gt;</a></span>
+		<span id="pos_nav_span"></span>
+	</div>
+</div>
+
+<!--body-->
+<div class="body clearfix" id="pro">
+	<div class="container" id="wptt">
+		<div class="row" id="good_nav">
+			<div class="item_div unSelected" id="item_div1" onclick="BtnOK(1)">
+				LED大屏
+			</div>
+			<div class="item_div unSelected" id="item_div2" onclick="BtnOK(2)">
+				门禁产品
+			</div>
+			<div class="item_div unSelected" id="item_div3" onclick="BtnOK(3)">
+				自动收发卡系列
+			</div>
+			<div class="item_div unSelected" id="item_div4" onclick="BtnOK(4)">
+				二维码流程控制产品
+			</div>
+			<div class="item_div unSelected" id="item_div5" onclick="BtnOK(5)">
+				地磅产品
+			</div>
+			<div class="item_div unSelected" id="item_div6" onclick="BtnOK(6)">
+				其他设备
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+        <div class="row" id="good_picture">
+			
+			
+
+
+        </div>
+    </div>
+</div>
+<!--end body-->
+
+<!--foot-->
+<script type="text/javascript" src="/inc/AspCms_Statistics.asp"></script><!--网页底部-->
+<div class="footer">
+  <dl>
+    <dt>
+    <a href="http://www.qdhualing.com">首页</a>
+    
+    	<a href="http://www.qdhualing.com/about/?8.html">公司简介</a>
+    
+    	<a href="http://www.qdhualing.com/about/?14.html">解决方案</a>
+    
+    	<a href="http://www.qdhualing.com/newslist/?109_1.html">工业4.0</a>
+    
+    	<a href="http://www.qdhualing.com/productlist/?4_1.html">工控产品</a>
+    
+    	<a href="http://www.qdhualing.com/about/?5.html">技术服务</a>
+    
+    	<a href="http://www.qdhualing.com/about/?65.html">联系我们</a>
+    
+    </dt>
+    <dd>
+      
+            <h4>青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color: #2a2a2a;">鲁ICP备15031378号</a></h4>
+
+    </dd>
+    <div class="clear"></div>
+  </dl>
+</div>
+
+
+<div id="foot" style=" display:none"> 
+   <ul>
+     <li>版权所有： 青岛华凌科技有限公司   &#160;&#160;  &#160;&#160;<a href="/www.miibeian.gov.cn/" target=_blank>鲁ICP备15031378号</a> </li>
+   	 <li> 电话：0532-55588351   &#160;&#160; 传真：0532-55588352 &#160;&#160;  邮箱：<a href="mailto:qdhualing@126.com">qdhualing@126.com  </a></li>
+     <li> 商话1：15712773653  商话2：15315019919    &#160;&#160;地址：山东省青岛市黄岛区双珠路288号东方金石大厦8F </li>
+   </ul>
+   <img src="http://www.qdhualing.com/templates/green/images/FOOT11.jpg" style="position:relative; top:8px; left:10px;" /> 
+</div>
+<!--end foot-->
+
+</div>
+</body>
+</html>

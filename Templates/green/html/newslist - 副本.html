@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{aspcms:sortname}-{aspcms:sitetitle}</title>
+<meta name="Keywords" content="" >
+<meta name="Description" content="" >
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/style.css"/>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/public.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ac7307581f39576782d4b1f0cea54c2c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+<!--toubu-->
+{aspcms:top}  
+<!--end toubu-->
+
+<!--body-->
+<div class="body" {if:sortid = 15} id="rencai"{elseif:sortid = 14 } id="ziliao"{else} id="news"{end if}>
+    <div id="part-l">
+		<div id="partl1">
+		   <div id="partl1-tt"><a href="{aspcms:siteurl}/">首页</a>{aspcms:position} >>[position:link]{/aspcms:position}</div>
+		   <div id="partl1-bb">
+		      <ul id="nnews">			                      
+            	{aspcms:newslist size=16 order=order}
+				  <li><a href="[newslist:link]">[newslist:title len=50]</a><span>【[newslist:date style=yy-m-d]】</span></li>
+                 {/aspcms:newslist}
+
+                    
+			  </ul>
+		   </div>
+            <div class="pagelink">[newslist:pagenumber len=8]</div>
+		</div>
+        
+	</div>
+
+	<div id="part-r">
+	    {aspcms:template src=left.html}
+	</div>
+
+</div>
+<!--end body-->
+
+
+<!--foot-->
+{aspcms:foot}
+<!--end foot-->
+
+
+    
+  
+</div>
+</body>
+</html>

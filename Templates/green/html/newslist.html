@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{aspcms:sortname}-{aspcms:sitetitle}</title>
+<meta name="Keywords" content="" >
+<meta name="Description" content="" >
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/style.css"/>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/public.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ac7307581f39576782d4b1f0cea54c2c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+<!--toubu-->
+{aspcms:top}  
+<!--end toubu-->
+<div id="weizhi"><a href="{aspcms:siteurl}/">首页</a>{aspcms:position} / [position:link]{/aspcms:position}</div>
+<!--body-->
+<div class="body clearfix" id="news">
+    <div id="part-l" style="width:865px;padding:0; background-color:#F5F5F5">
+		<div class="news_con">
+        	<ul>
+                {aspcms:newslist size=16 order=order}  
+                <li>
+                	<p class="title"><a href="[newslist:link]" target="_blank">[newslist:title len=50]</a></p>
+                    <P class="sj">华凌科技　　[newslist:date style=yy-m-d]　　浏览数: [newslist:visits]</P>
+                    <p class="con">[newslist:desc len=150]</p>
+                    <p class="m"><a href="[newslist:link]" class="more" target="_blank">阅读全文>></a></p>
+                    <div class="bg"></div>
+                </li>
+                 {/aspcms:newslist}
+            </ul>
+            <div class="clear"></div>
+            </div>
+            
+            <div class="pagelink">[newslist:pagenumber len=5]</div>
+		</div>
+        
+	
+
+	<div id="part-r">
+	    <div class="leftnav">
+			{if:{aspcms:topsortid} = 102}
+			<h2>近期主要业绩</h2> 
+			{else}
+			<h2>工业4.0</h2> 
+			{end if}
+			<ul>
+            {aspcms:navlist type={aspcms:topsortid}}
+			    <li><a href="[navlist:link]" {if:[navlist:sortid]=[navlist:cursortid]} style="color:#a71d0f"{end if}>[navlist:name]</a></li>
+            {/aspcms:navlist}
+
+			</ul>
+		</div>
+		<div class="lxfs">
+			<h2>联系方式</h2>
+			<p>电话：{aspcms:companyphone} </p>
+			<p>传真：{aspcms:companyfax}</p>
+			<p>邮箱：{aspcms:companyemail} </p>
+			<p>商话1：{aspcms:companymobile}</p>
+			<p>商话2：{aspcms:companycontact}</p>
+			<p>地址：{aspcms:companyaddress} </p>
+		</div>
+		 
+	</div>
+
+</div>
+<!--end body-->
+
+
+<!--foot-->
+{aspcms:foot}
+<!--end foot-->
+
+
+    
+  
+</div>
+</body>
+</html>

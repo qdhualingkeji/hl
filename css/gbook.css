@@ -1,0 +1,8 @@
+/* CSS Document */
+#faqbox {}
+#faqbox .faqline{ line-height:2em; height:35px; text-align:left}
+#faqbox .faqline .faqtit{  width:70px; display:block; float:left; clear:both; text-align:right}
+#faqbox .Content{ line-height:2em; height:120px; text-align:left}
+#faqbox .Content  .faqtit{  width:70px; display:block; float:left; clear:both; text-align:right}
+#faqbox .Content textarea { height:100px;}
+

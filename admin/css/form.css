@@ -1,0 +1,53 @@
+*{
+margin:0px;
+padding:0px;
+}
+body,td{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+td{
+padding:3px;
+}
+.txt_C1{
+color:#3a6379;
+}
+.txt_C2{
+color:#3e7297;
+}
+.txt_C3 {
+	color:#0198cd;
+}
+.topGuide img{
+vertical-align:middle;
+margin:auto 5px;
+}
+.topMenu{
+text-align:right;
+}
+.topMenu img{
+margin-left:5px;
+}
+
+.bottomButtion{
+background:url(../images/button_bg.gif) repeat-x top #ddf1f8;
+border:#90b7d4 solid 1px;
+padding:1px 3px 0px;
+margin:0px 2px;
+}
+.bottomButtion  {
+	text-decoration: none;
+}
+.userButton{
+background:url(../images/userbutton_bg.gif) repeat-x top #ddf1f8;
+border:#01b8db solid 1px;
+padding:1px 3px 0px;
+margin:0px 2px;
+text-decoration:none;
+}
+.bottomInput{
+height:16px;
+font-size:12px;
+border:#78b0bd solid 1px;
+padding:1px 2px 0px;
+}

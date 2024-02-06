@@ -1,0 +1,1421 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>首页-工控产品-二维码喷码机-详情</title>
+<meta name="Keywords" content="喷码、打码、打标、激光、智能、手持、打印、设备" >
+<meta name="Description" content="" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="http://www.qdhualing.com/Templates/green/css/style.css"/>
+<!--js 部分-->
+<script type="text/javascript" src="http://www.qdhualing.com/Templates/green/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://www.qdhualing.com/Templates/green/js/myfocus-2.0.1.min.js"></script>
+<style type="text/css">
+body {
+    font-size: 14px;
+    line-height: 1.42857143;
+	background-color: #f1f1f1;
+}
+.container {
+    width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+a {
+    color: #428bca;
+}
+#pt {
+    padding: 40px 0;
+    margin: 0px;
+    font-size: 13px;
+}
+#pt .gkcp_pos_nav_span a,#pt .par_pos_nav_span a{
+	color: #2b2b2b;
+}
+#pt span:last-child {
+    color: #0067B2;
+}
+.good_list {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    padding: 0;
+}
+.good_list div {
+    padding: 18px 30px;
+	/*
+    width: 100%;
+	*/
+    border-bottom: 1px solid #e8e8e8;
+}
+.good_list div img {
+    float: right;
+}
+.col-sm-3 {
+    width: 25%;
+}
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+}
+.col-sm-8 {
+    width: 63.3%;
+}
+.good_thing {
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.show {
+    width: 100%;
+    height: auto;
+    background: #eee;
+}
+.item {
+    background: #fff;
+    width: 320px;
+    height: auto;
+    float: left;
+    margin: 15px;
+}
+.big-photo img {
+    width: 320px;
+    height: 300px;
+    border: 1px solid #e0e0e0;
+}
+.des-small img {
+    width: 18%;
+    height: 60px;
+    margin: 10px 0;
+}
+.guige {
+	width: 50%;
+	margin-left: 5px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #666;
+}
+.guige div {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid #415886;
+    padding: 0px 0px;
+    border-bottom: 0;
+}
+.guige_bg {
+    background-color: #415886;
+    color: #fff !important;
+}
+.jianj {
+	width:750px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.jianj div {
+    font-size: 8px;
+}
+.space_div{
+	width:100%;height:50px;clear: both;
+}
+</style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ac7307581f39576782d4b1f0cea54c2c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<div class="wrapper">
+
+<!--toubu-->
+<script type="text/javascript">
+$(function(){
+	var tabTitle = ".tab  span";
+	var tabContent = ".tab .shen";
+	$(tabTitle + ":first").addClass("on");
+	$(tabContent).not(":first").hide();
+	$(tabTitle).unbind("hover").bind("hover", function(){
+	var text = $(this).text();
+	$(this).siblings("span").removeClass("on").end().addClass("on");
+	if(text == "行业应用"){
+		$(".amore").attr("href","/about/?14.html")
+	}else{
+		$(".amore").attr("href","/newslist/?109_1.html")
+	}
+
+	var index = $(tabTitle).index( $(this) );
+	$(tabContent).eq(index).siblings(tabContent).hide().end().show();
+	});
+
+	$(".topn").toggle(function(){
+		$(this).next("ul").show();
+	},function(){
+		$(this).next("ul").hide();
+	})
+
+	initDetailInfo();
+});
+
+function initDetailInfo(){
+	var ppnSpan=$("#par_pos_nav_span");
+	var cpnSpan=$("#chi_pos_nav_span");
+	var fonDiv=$("#show #fon");
+	var itemDiv=$("#show #item");
+	var ppnHtml="";
+	var cpnHtml="";
+	var fonHtml="";
+	var itemHtml="";
+	var id=getQueryString("id");
+	if(id==61){
+		ppnHtml+="<a href=\"goods.html?id=7\">小字符喷码机</a>";
+		cpnHtml+="V150Plus喷码机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">小字符喷码机</div>";
+		fonHtml+="<ul>";
+			fonHtml+="<li>V150Plus喷码机</li>";
+			fonHtml+="<li>稳定高速、维护更简单，智能故障提醒功能。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20200417094141204.png\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20200417095208423.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810141239947.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810141250166.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810141304275.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810141315650.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==62){
+		ppnHtml+="<a href=\"goods.html?id=7\">小字符喷码机</a>";
+		cpnHtml+="V280Plus喷码机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">小字符喷码机</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>V280Plus喷码机</li>";
+		fonHtml+="<li>新一代Plus机型采用全新打印模式、全新自主开发操作系统、墨路结构全新优化、运行更加稳定高效</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200417100423814.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200417100402798.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810141657885.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810141724885.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810141736572.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810141744072.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==66){
+		ppnHtml+="<a href=\"goods.html?id=7\">小字符喷码机</a>";
+		cpnHtml+="v380Plus喷码机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">小字符喷码机</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>v380Plus喷码机</li>";
+		fonHtml+="<li>采用8寸全彩屏触摸操控系统、人机互动更方便、设有故障智能提示灯、具备定时停墨关机功能</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200417103404658.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200417103323736.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810141931994.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801142740333.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801142809099.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801142750943.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==68){
+		ppnHtml+="<a href=\"goods.html?id=7\">小字符喷码机</a>";
+		cpnHtml+="V380P白墨机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">小字符喷码机</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>V380P白墨机</li>";
+		fonHtml+="<li>适用于线缆、管材、型材行业喷码，专用于深色产品标识。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200417103712533.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200417103658658.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801142927427.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810142208401.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801142936567.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801142944818.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==72){
+		ppnHtml+="<a href=\"goods.html?id=7\">小字符喷码机</a>";
+		cpnHtml+="V220Plus喷码机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">小字符喷码机</div>";
+		fonHtml+="<ul>";
+			fonHtml+="<li>V220Plus喷码机</li>";
+			fonHtml+="<li>设计优良、墨路电路全面升级、采用模块化设计、模具化生产、并智能故障提醒。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20200417104212251.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20200417104146283.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143014396.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810142338400.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143022255.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810142554150.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==145){
+		ppnHtml+="<a href=\"goods.html?id=7\">小字符喷码机</a>";
+		cpnHtml+="v260Plus喷码机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">小字符喷码机</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>v260Plus喷码机</li>";
+		fonHtml+="<li>自动喷头清洗、智能故障提醒，800字符/秒喷印速度，能满足各行业喷码需求。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200417104742829.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200417104731673.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143600708.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810142945448.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810142737369.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143657880.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==73){
+		ppnHtml+="<a href=\"goods.html?id=8\">激光打码机/打标机</a>";
+		cpnHtml+="二氧化碳激光打标机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">激光打码机/打标机</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>二氧化碳激光打标机</li>";
+		fonHtml+="<li>美国进口CO2射频激光器，寿命长，线条细，设备稳定免维护，打标效果好。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180918093142493.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810143118432.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143103179.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143107599.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143111349.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143115741.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==74){
+		ppnHtml+="<a href=\"goods.html?id=8\">激光打码机/打标机</a>";
+		cpnHtml+="光纤激光打标机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">激光打码机/打标机</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>光纤激光打标机</li>";
+		fonHtml+="<li>采用一体化整体结构，配备自动调焦系统，操作过程人性化。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180314150118639.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810143246525.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143146771.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810143324385.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143157771.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143201224.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==149){
+		ppnHtml+="<a href=\"goods.html?id=8\">激光打码机/打标机</a>";
+		cpnHtml+="紫外激光打标机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">激光打码机/打标机</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>紫外激光打标机</li>";
+		fonHtml+="<li></li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20170627172414939.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810143703041.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810143646120.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143737833.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143740990.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143744567.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==76){
+		ppnHtml+="<a href=\"goods.html?id=9\">高解析喷码机</a>";
+		cpnHtml+="T300系列高解析喷码设备";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">高解析喷码机</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>T300系列高解析喷码设备</li>";
+		fonHtml+="<li>打印图像的高度可以在最大12.5mm到100mm之间、各种型号打印机专为满足您的各种喷码、打印和产品ID的应用需求</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20200417105952298.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20200417105944017.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143308256.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143312208.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143317302.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810143938463.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==78){
+		ppnHtml+="<a href=\"goods.html?id=9\">高解析喷码机</a>";
+		cpnHtml+="MDPS多功能数据打印系统";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">高解析喷码机</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>MDPS多功能数据打印系统</li>";
+		fonHtml+="<li>MDPS喷印系统</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20170317085443100.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810144135478.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143353896.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143358474.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810144123385.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801143405646.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==79){
+		ppnHtml+="<a href=\"goods.html?id=9\">高解析喷码机</a>";
+		cpnHtml+="S系列手持喷码机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">高解析喷码机</div>";
+		fonHtml+="<ul>";
+			fonHtml+="<li>S系列手持喷码机</li>";
+			fonHtml+="<li>360度全方位喷码，操作简便、可喷条形码和二维码。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20200417105114486.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20200417105104142.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143432442.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810144401025.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143440083.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143443317.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==282){
+		ppnHtml+="<a href=\"goods.html?id=9\">高解析喷码机</a>";
+		cpnHtml+="T800系列高解析喷码设备";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">高解析喷码机</div>";
+		fonHtml+="<ul>";
+			fonHtml+="<li>T800系列高解析喷码设备</li>";
+			fonHtml+="<li>自带7寸触摸屏工控机、打印高度12.7mm-101.6mm、打印速度300*150dpi时可达90m/min</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200418133439564.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200418133425486.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200418134717689.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200418134555064.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+=" <a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200418134606798.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20200418134616423.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==75){
+		ppnHtml+="<a href=\"goods.html?id=10\">大字符喷码机</a>";
+		cpnHtml+="大字符喷码机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">大字符喷码机</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>大字符喷码机</li>";
+		fonHtml+="<li>7点和16点阵可选，实用输入接口满足各种应用要求。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180918092917180.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810144604433.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810144555697.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143231974.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143235255.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143239286.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==104){
+		ppnHtml+="<a href=\"goods.html?id=54\">UV可变数据喷印系统</a>";
+		cpnHtml+="UV6610喷码机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">UV可变数据喷印系统</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>UV6610喷码机</li>";
+		fonHtml+="<li>喷码速度快、字体清晰，一物一码、防伪防串货，是各种柔印机、凹印机理想的配套功能扩展设备。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20190829093006976.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810144740338.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810144816838.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810144825963.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810144831963.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810144853447.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==105){
+		ppnHtml+="<a href=\"goods.html?id=54\">UV可变数据喷印系统</a>";
+		cpnHtml+="UV8900喷印系统";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">UV可变数据喷印系统</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>UV8900喷印系统</li>";
+		fonHtml+="<li>可根据客户特殊要求定制编辑软件，可安装于各种印刷机器以及相关配套设备上。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180918093811415.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810145652041.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801144512255.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810145636588.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810145631635.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810145624385.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==106){
+		ppnHtml+="<a href=\"goods.html?id=54\">UV可变数据喷印系统</a>";
+		cpnHtml+="UV9100喷码机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">UV可变数据喷印系统</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li> UV9100喷码机</li>";
+		fonHtml+="<li>原装进口理光喷头，广泛用于单据、票据、防伪、不干胶、标签、证卡、药品监管码等应 用的理想选择。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180918093829305.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810150037151.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801144554618.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801144558599.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180810150017869.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20180801144605239.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==270){
+		ppnHtml+="<a href=\"goods.html?id=54\">UV可变数据喷印系统</a>";
+		cpnHtml+="UV6810喷码机";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">UV可变数据喷印系统</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>UV6810喷码机</li>";
+		fonHtml+="<li>高效数据传输 集成系统电路，承印介质广泛 设备扩展方便，喷头精度高 精准稳定负压，速度与内容兼得 质量优异</li>";
+		fonHtml+="</ul>";
+                        
+		itemHtml+="<a class=\"big-photo\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20190829155513383.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20190829160155195.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20190829160158101.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20190829160201429.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20190829160205164.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+		itemHtml+="<img src=\"../../UpFiles/File/20190829160208211.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	else if(id==196){
+		ppnHtml+="<a href=\"goods.html?id=100\">R系列热转印智能打码机</a>";
+		cpnHtml+="TTO热转印设备";
+
+		fonHtml+="<div style=\"font-size:1.5vw;\">R系列热转印智能打码机</div>";
+		fonHtml+="<ul>";
+		fonHtml+="<li>TTO热转印设备</li>";
+		fonHtml+="<li>R系列热转印打码机，是目前世界上性价比较高的智能打码机，主要适用于食品、制药、日化、种子、生活用纸、 金融钞票等各类软包装标识解决方案。</li>";
+		fonHtml+="</ul>";
+
+		itemHtml+="<a class=\"big-photo\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180918093443165.jpg\" alt=\"big\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810150203150.jpg\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143806224.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180801143810411.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810150326744.png\" alt=\"small\">";
+		itemHtml+="</a>";
+		itemHtml+="<a class=\"des-small\">";
+			itemHtml+="<img src=\"../../UpFiles/File/20180810150334197.png\" alt=\"small\">";
+		itemHtml+="</a>";
+	}
+	$("#inputid").val(id)
+	ppnSpan.html(ppnHtml);
+	cpnSpan.html(cpnHtml);
+	fonDiv.html(fonHtml);
+	itemDiv.html(itemHtml);
+	BtnOK(1);
+}
+
+function BtnOK(sid) {
+	if(sid==1){
+		$("#guige div").eq(0).addClass("guige_bg");
+		$("#guige div").eq(1).removeClass("guige_bg");
+	}
+	else if(sid==3){
+		$("#guige div").eq(0).removeClass("guige_bg");
+		$("#guige div").eq(1).addClass("guige_bg");
+	}
+
+	var jianjChildDiv=$(".jianj div");
+	jianjChildDiv.empty();
+	var jjcdHtml="";
+	var id = $("#inputid").val();
+	if(id==61){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;\" align=\"center\">";
+				jjcdHtml+="&nbsp;&nbsp;";
+				jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20200417/20200417095626_0017.jpg\">";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<iframe src=\"http://player.youku.com/embed/XMzgxNTM5MTIwMA==\" ?allowfullscreen?=\"\" width=\"90%\" height=\"300\" frameborder=\"0\">";
+				jjcdHtml+="</iframe>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==62){
+		if(sid==1){
+			jjcdHtml+="<div style=\"margin:0px;padding:0px;\" class=\"bdsharebuttonbox bdshare-button-style0-16\" align=\"center\">";
+			jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20200417/20200417100551_0330.jpg\"><br>";
+			jjcdHtml+="&nbsp;&nbsp;";
+			jjcdHtml+="</div>";
+			jjcdHtml+="<p>";
+			jjcdHtml+="<span style=\"font-family:&quot;color:#000000;\"><strong></strong></span> ";
+			jjcdHtml+="</p>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<div style=\"text-align:center;\">";
+			jjcdHtml+="<embed src=\"http://player.youku.com/player.php/sid/XMjc4Mjk5MTg1Ng==/v.swf\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"550\" height=\"400\"><br>";
+			jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==66){
+		if(sid==1){
+			jjcdHtml+="<p align=\"center\">";
+				jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20200417/20200417103053_6736.jpg\"> ";
+			jjcdHtml+="</p>";
+			jjcdHtml+="<p>";
+				jjcdHtml+="<br>";
+			jjcdHtml+="</p>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<div style=\"text-align:center;\">";
+					jjcdHtml+="<embed src=\"http://221.234.36.59:8055/Content/kindeditor/attached/image/20170627/20170627173149_8483.png\">";
+					jjcdHtml+="<span>";
+					jjcdHtml+="</span>";
+					jjcdHtml+="<br>";
+				jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==68){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<p style=\"text-align:center;\">";
+					jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20200417/20200417103826_0330.jpg\">";
+				jjcdHtml+="</p>";
+				jjcdHtml+="<p>";
+					jjcdHtml+="<br>";
+				jjcdHtml+="</p>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<div style=\"text-align:center;\">";
+					jjcdHtml+="<embed src=\"http://221.234.36.59:8055/Content/kindeditor/attached/image/20170627/20170627173149_8483.png\">";
+					jjcdHtml+="<embed src=\"http://player.youku.com/player.php/sid/XMzE5OTkyMTM0NA==/v.swf\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"550\" height=\"400\">";
+					jjcdHtml+="<span>";
+					jjcdHtml+="</span>";
+					jjcdHtml+="<br>";
+				jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==72){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<p align=\"center\">";
+					jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20200417/20200417104404_8299.jpg\">";
+				jjcdHtml+="</p>";
+				jjcdHtml+="<p align=\"center\">";
+					jjcdHtml+="<br>";
+					jjcdHtml+="&nbsp;";
+					jjcdHtml+="<span style=\"color:#000000;font-family:Microsoft YaHei;font-size:14px;\">";
+					jjcdHtml+="</span>";
+				jjcdHtml+="</p>";
+				jjcdHtml+="<p>";
+					jjcdHtml+="<br>";
+				jjcdHtml+="</p>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<div style=\"text-align:center;\">";
+					jjcdHtml+="<img alt=\"\" src=\"http://221.234.36.59:8055/Content/kindeditor/attached/image/20170627/20170627173221_8173.png\">";
+					jjcdHtml+="<br>";
+				jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==145){
+		if(sid==1){
+			jjcdHtml+="<p style=\"text-align:center;\">";
+				jjcdHtml+="<span style=\"font-size:14px;\">";
+					jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20200417/20200417104814_2517.jpg\">";
+					jjcdHtml+="<br>";
+					jjcdHtml+="&nbsp;&nbsp;&nbsp;&nbsp;";
+				jjcdHtml+="</span>";
+			jjcdHtml+="</p>";
+			jjcdHtml+="<div>";
+				jjcdHtml+="<br>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<div style=\"text-align:center;\">";
+					jjcdHtml+="<img alt=\"\" src=\"http://221.234.36.59:8055/Content/kindeditor/attached/image/20170627/20170627173309_8957.png\">";
+					jjcdHtml+="<br>";
+				jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==73){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<p align=\"center\">";
+			jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20180528/20180528113250_8638.jpg\"> ";
+			jjcdHtml+="</p>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<iframe src=\"http://player.youku.com/embed/XMzgxNTk2MjY0MA==\" ?allowfullscreen?=\"\" width=\"510\" height=\"498\" frameborder=\"0\">";
+			jjcdHtml+="</iframe>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==74){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<div style=\"text-align:center;\">";
+			jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20180528/20180528113225_5040.jpg\"><br>";
+			jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<div style=\"text-align:center;\">";
+			jjcdHtml+="<embed src=\"http://player.youku.com/player.php/sid/XMjc4Mjg2NzI1Ng==/v.swf\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"550\" height=\"400\"><br>";
+			jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==149){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<p style=\"text-indent:0pt;\" class=\"MsoNormal\" align=\"center\">";
+			jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20180719/20180719163904_6489.jpg\">";
+			jjcdHtml+="</p>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<iframe src=\"http://player.youku.com/embed/XMzc4MzE2MzkxMg==\" 'allowfullscreen'=\"\" width=\"510\" height=\"498\" frameborder=\"0\">";
+			jjcdHtml+="</iframe>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==76){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;\">";
+			jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20200417/20200417105841_2830.jpg\">";
+			jjcdHtml+="<br>";
+			jjcdHtml+="&nbsp;";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<iframe src=\"http://player.youku.com/embed/XMzc4MzE2NjA2MA==\" ?allowfullscreen?=\"\" width=\"510\" height=\"498\" frameborder=\"0\">";
+			jjcdHtml+="</iframe>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==78){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<p style=\"text-align:center;\">";
+					jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20180528/20180528113041_6131.jpg\"> ";
+				jjcdHtml+="</p>";
+				jjcdHtml+="<p>";
+					jjcdHtml+="<br>";
+				jjcdHtml+="</p>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<iframe src=\"http://player.youku.com/embed/XMzc4MzE2NjA2MA==\" 'allowfullscreen'=\"\" width=\"510\" height=\"498\" frameborder=\"0\">";
+				jjcdHtml+="</iframe>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==79){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<p style=\"text-align:center;color:#323232;font-family:&quot;&quot;;\">";
+					jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20190829/20190829163114_2425.jpg\">";
+					jjcdHtml+="&nbsp;";
+				jjcdHtml+="</p>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<div style=\"text-align:center;\">";
+					jjcdHtml+="<embed src=\"http://player.youku.com/player.php/sid/XMjk5MTU4MTg4NA==/v.swf\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"550\" height=\"400\">";
+					jjcdHtml+="<br>";
+				jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==282){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<p align=\"center\">";
+					jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20200418/20200418134223_3143.jpg\">";
+				jjcdHtml+="</p>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="";
+		}
+	}
+	else if(id==75){
+		if(sid==1){
+			jjcdHtml+="<div style=\"margin:0px;padding:10px 0px 0px;\" class=\"admin\">";
+				jjcdHtml+="<div style=\"margin:0px;padding:0px;text-align:center;\" class=\"bdsharebuttonbox bdshare-button-style0-16\">";
+					jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20180528/20180528113202_0818.jpg\">&nbsp;";
+				jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<div style=\"text-align:center;\">";
+					jjcdHtml+="<embed src=\"http://player.youku.com/player.php/sid/XMzc4MzE2MTczMg==/v.swf\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"550\" height=\"400\">";
+				jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==104){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<p style=\"text-align:center;color:#333333;font-family:微软雅黑;font-size:14px;\">";
+			jjcdHtml+="<img src=\"../../Content/kindeditor/attached/image/20190829/20190829092154_2893.jpg\" alt=\"\"> ";
+			jjcdHtml+="</p>";
+			jjcdHtml+="<p>";
+			jjcdHtml+="<br>";
+			jjcdHtml+="</p>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<div style=\"text-align:center;\">";
+			jjcdHtml+="<embed src=\"http://player.youku.com/player.php/sid/XMzc4MzYwMzUzMg==/v.swf\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"550\" height=\"400\">";
+			jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==105){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<p align=\"center\">";
+			jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20180528/20180528112830_7224.jpg\">";
+			jjcdHtml+="</p>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<div style=\"text-align:center;\">";
+			jjcdHtml+="<embed src=\"http://player.youku.com/player.php/sid/XMzc4MzYwMzUzMg==/v.swf\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"550\" height=\"400\">";
+			jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==106){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<p align=\"center\">";
+			jjcdHtml+="&nbsp;";
+			jjcdHtml+="</p>";
+			jjcdHtml+="<p align=\"center\">";
+			jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20180801/20180801135613_4897.jpg\"> ";
+			jjcdHtml+="</p>";
+			jjcdHtml+="<p align=\"center\">";
+			jjcdHtml+="<br>";
+			jjcdHtml+="</p>";
+			jjcdHtml+="<p>";
+			jjcdHtml+="<br>";
+			jjcdHtml+="</p>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<div style=\"text-align:center;\">";
+			jjcdHtml+="<embed src=\"http://player.youku.com/player.php/sid/XMzc4MzYwMzUzMg==/v.swf\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"550\" height=\"400\">";
+			jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==270){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;\">";
+			jjcdHtml+="<img src=\"../../Content/kindeditor/attached/image/20190829/20190829155704_3518.jpg\" alt=\"\"> ";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+			jjcdHtml+="<div style=\"text-align:center;\">";
+			jjcdHtml+="<embed src=\"https://v.youku.com/v_show/id_XMzgxNDQ4ODY1Mg==.html?spm=a2h9p.12366999.app.5~5!2~5~5!2~5~5!2~5!3~5~5~5~5~5~21~22~TR!9~TD!2~5~5!2~H4~A\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"550\" height=\"400\">";
+			jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	else if(id==196){
+		if(sid==1){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<p style=\"text-align:center;\">";
+					jjcdHtml+="<span style=\"color:#003399;font-size:16px;\">";
+						jjcdHtml+="<span style=\"color:#003399;font-size:16px;\">";
+							jjcdHtml+="<strong>";
+								jjcdHtml+="<img alt=\"\" src=\"../../Content/kindeditor/attached/image/20180528/20180528123103_6599.jpg\">";
+								jjcdHtml+="<br>";
+							jjcdHtml+="</strong>";
+						jjcdHtml+="</span>";
+					jjcdHtml+="</span>";
+				jjcdHtml+="</p>";
+			jjcdHtml+="</div>";
+		}
+		else if(sid==3){
+			jjcdHtml+="<div style=\"text-align:center;width:100%;\">";
+				jjcdHtml+="<div style=\"text-align:center;\">";
+					jjcdHtml+="<embed src=\"http://player.youku.com/player.php/sid/XMzE5MDU0NTUwMA==/v.swf\" type=\"application/x-shockwave-flash\" quality=\"high\" width=\"550\" height=\"400\">";
+				jjcdHtml+="</div>";
+			jjcdHtml+="</div>";
+		}
+	}
+	jianjChildDiv.html(jjcdHtml);
+}
+
+function dropMenu(obj){
+	$(obj).each(function(){
+		var theSpan = $(this);
+		var theMenu = theSpan.find(".submenu");
+		var tarHeight = theMenu.height();
+		theMenu.css({height:0,opacity:0});
+		
+		var t1;
+		
+		function expand() {
+			clearTimeout(t1);
+			theSpan.find('a').addClass("selected");
+			theMenu.stop().show().animate({height:tarHeight,opacity:1},0);
+			
+		}
+		
+		function collapse() {
+			clearTimeout(t1);
+			t1 = setTimeout(function(){
+				theSpan.find('a').removeClass("selected");
+				theMenu.stop().animate({height:0,opacity:0},0,function(){
+					$(this).css({display:"none"});
+				});
+			}, 0);
+		}
+		
+		theSpan.hover(expand, collapse);
+		theMenu.hover(expand, collapse);
+	});
+}
+
+function getQueryString(name){
+	 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	 var r = window.location.search.substr(1).match(reg);
+	 if(r!=null)return  unescape(r[2]); return null;
+}
+
+$(document).ready(function(){
+	dropMenu(".drop-menu-effect");
+});
+</script>
+<style type="text/css">
+.sunnav{ display:none}
+</style>
+
+<!--top部分-start-->
+<div class="index_nav">
+  <div class="fixed_contant clearfix"> 
+	
+	<!--logo 部分--> 
+	<a href="/" class="logo"><img src="http://www.qdhualing.com/templates/green/images/logo.png" style="height:70px;margin-top:10px"/></a> 
+	
+	<!--top链接部分--> 
+	<div class="site_nav">
+	<!--<ul class="clearfix">
+		<li><a href="/about/?8.html">公司简介</a></li><li><a href="/about/?65.html">联系我们</a></li><li><a href="/about/?5.html">技术服务</a></li><li><a href="/about/?1.html" style="border-right:none">行业应用</a></li>
+	</ul>-->
+	<img src="http://www.qdhualing.com/templates/green/images/header_tel.png" class="tel" style="margin-top:40px;"/>
+	</div>
+	
+  </div>
+</div>
+<!--top部分-end-->
+
+<!--nav部分-start  class="selected2" -->
+<div class="nav">
+  <ul class="nav_list clearfix">
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/" ><span>首页</span></a></li>
+	
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/about/?8.html"  >公司简介</a> 
+    </li>
+    
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/about/?14.html"  >解决方案</a>
+      <ul class="submenu" >
+        <li><a href="http://www.qdhualing.com/about/?172.html">WMS管理系统解..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?170.html">厂区人员定位系统..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?167.html">园林树木二维码溯..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?154.html">产品二维码信息查..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?175.html">辰麒智能称重管理..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?163.html">扫二维码查看说明..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?161.html">二维码防伪查询系..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?152.html">产品赋码追溯系统..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?162.html">二维码商品信息查..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?153.html">石墨负极材料生产..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?159.html">电厂DCS自动化..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?160.html">共享医疗器械二维..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?101.html">润滑油行业自动化..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?139.html">锅炉行业自动化控..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?110.html">脱硝自动化控制系..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?146.html">农药生产制剂自动..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?140.html">减水剂行业自动化..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?141.html">硫磺制酸工程自动..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?142.html">甲醛生产自动化控..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?143.html">轻工制药行业典型..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?144.html">炼油石化行业典型..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?100.html">新能源行业自动化..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?99.html">医疗化工行业控制..</a></li>
+        
+        
+      </ul>
+       
+    </li>
+    
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/newslist/?109_1.html"  >工业4.0</a>
+      <ul class="submenu" >
+        <li><a href="http://www.qdhualing.com/about/?169.html">工业物联网数据采..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?147.html">工业4.0概念简..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/about/?148.html">实施案例..</a></li>
+        
+        
+      </ul>
+       
+    </li>
+    
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/productlist/?4_1.html"  >工控产品</a>
+      <ul class="submenu" >
+		<li><a href="http://www.qdhualing.com/staticPage/gkcp/mjznczcp/goods.html?id=1">门禁智能称重产品..</a></li>
+
+        <li><a href="http://www.qdhualing.com/staticPage/gkcp/ewmpmj/goods.html?id=7">二维码喷码机..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?173_1.html">辰麒仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?94_1.html">HCP仪器仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?95_1.html">上润仪器仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?155_1.html">控制柜、配电箱..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?156_1.html">分析仪器..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?158_1.html">监控设备..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?157_1.html">无线设备..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?97_1.html">流量仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?96_1.html">称重仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?98_1.html">变频器..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?145_1.html">无线仪表..</a></li>
+        
+        <li><a href="http://www.qdhualing.com/productlist/?168_1.html">昆仑通态触摸屏..</a></li>
+        
+        
+      </ul>
+       
+    </li>
+    
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/about/?5.html"  >技术服务</a> 
+    </li>
+    
+    <li class="drop-menu-effect"><a href="http://www.qdhualing.com/about/?65.html"  >联系我们</a> 
+    </li>
+    
+  </ul>
+</div>
+<!--nav部分-end -->
+
+<div class="container-fluid">
+	<div class="row" id="picture">
+		<img src="../../img/202008110001.png">
+	</div>
+</div>
+<!--end toubu-->
+
+<div class="container">
+	<div class="row" id="pt">
+		<img src="../../img/202008110003.png" alt="">
+		<span class="gkcp_pos_nav_span"><a href="goods.html?id=7">工控产品&gt;</a></span>
+		<span class="par_pos_nav_span" id="par_pos_nav_span"></span>&gt;
+		<span id="chi_pos_nav_span"></span>
+	</div>
+</div>
+
+	<div class="container">
+        <div class="row">
+            <div class="col-sm-3 good_list">
+				<div>
+					<a href="goods.html?id=7">
+						小字符喷码机<img src="../../img/logo3.png" alt="">
+					</a>
+				</div>
+				<div>
+					<a href="goods.html?id=8">
+						激光打码机/打标机<img src="../../img/logo3.png" alt="">
+					</a>
+				</div>
+				<div>
+					<a href="goods.html?id=9">
+						高解析喷码机<img src="../../img/logo3.png" alt="">
+					</a>
+				</div>
+				<div>
+					<a href="goods.html?id=10">
+						大字符喷码机<img src="../../img/logo3.png" alt="">
+					</a>
+				</div>
+				<div>
+					<a href="goods.html?id=54">
+						UV可变数据喷印系统<img src="../../img/logo3.png" alt="">
+					</a>
+				</div>
+				<div>
+					<a href="goods.html?id=100">
+						R系列热转印智能打码机<img src="../../img/logo3.png" alt="">
+					</a>
+				</div>
+            </div>
+            <div class="col-sm-8 good_thing">
+                <div class="show" id="show">
+                    <div id="fon" style="float:right;width:20vw;margin-top:4vw;">
+                        
+						
+                        
+                        
+                    
+                    
+                        
+                    
+
+                    </div>
+                    <div class="item" id="item">
+                        
+						
+                        
+                        
+                        
+                    
+                    
+                    
+
+                    </div>
+                    <div class="clear"></div>
+
+                </div>
+                <div class="guige" id="guige">
+                    <div class="guige_bg" onclick="BtnOK(1)">
+                        <input id="inputid" style="width:100px;" type="hidden" value="61">
+                        产品详情
+                    </div>
+                    
+                    <div onclick="BtnOK(3)">
+                        应用案例
+                    </div>
+                    
+                </div>
+                <div class="jianj">
+                    <div style="text-align:center;width:100%;">
+
+                        
+					
+                    
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="space_div"></div>
+
+	<!--foot-->
+	<script type="text/javascript" src="/inc/AspCms_Statistics.asp"></script><!--网页底部-->
+	<div class="footer">
+	  <dl>
+		<dt>
+		<a href="http://www.qdhualing.com">首页</a>
+		
+			<a href="http://www.qdhualing.com/about/?8.html">公司简介</a>
+		
+			<a href="http://www.qdhualing.com/about/?14.html">解决方案</a>
+		
+			<a href="http://www.qdhualing.com/newslist/?109_1.html">工业4.0</a>
+		
+			<a href="http://www.qdhualing.com/productlist/?4_1.html">工控产品</a>
+		
+			<a href="http://www.qdhualing.com/about/?5.html">技术服务</a>
+		
+			<a href="http://www.qdhualing.com/about/?65.html">联系我们</a>
+		
+		</dt>
+		<dd>
+			<h4>青岛华凌科技有限公司 qdhualing.com <a href="http://www.beian.miit.gov.cn" style="color: #2a2a2a;">鲁ICP备15031378号</a></h4>
+		</dd>
+		<div class="clear"></div>
+	  </dl>
+	</div>
+
+	<div id="foot" style=" display:none"> 
+	   <ul>
+		 <li>版权所有： 青岛华凌科技有限公司   &#160;&#160;  &#160;&#160;<a href="/www.miibeian.gov.cn/" target=_blank>鲁ICP备15031378号</a> </li>
+		 <li> 电话：0532-55588351   &#160;&#160; 传真：0532-55588352 &#160;&#160;  邮箱：<a href="mailto:qdhualing@126.com">qdhualing@126.com  </a></li>
+		 <li> 商话1：15712773653  商话2：15315019919    &#160;&#160;地址：山东省青岛市黄岛区双珠路288号东方金石大厦8F </li>
+	   </ul>
+	   <img src="http://www.qdhualing.com/templates/green/images/FOOT11.jpg" style="position:relative; top:8px; left:10px;" /> 
+	</div>
+	<!--end foot-->
+
+</div>
+ </body>
+</html>

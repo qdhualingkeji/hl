@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{aspcms:sitetitle}</title>
+<meta name="keywords" content="{aspcms:sitekeywords}" />
+<meta name="description" content="{aspcms:sitedesc}" />
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/style.css"/>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/public.js"></script>
+<!--[if IE 6]>
+<style type="text/css">
+.body #part-r #partr1{width:240px;overflow:hidden;}
+.body #part-r #partr1 ul{}
+.body #part-r #partr1 li{text-align:left; height:34px;line-height:34px;}
+.body #part-r #partr1 li img{ margin-top:10px;}
+.partl1-b li{text-align:left;line-height:19px; }
+.body #part-l #partl1 #partl1-bb li{float:left;margin-left:10px;line-height:24px;margin-bottom:10px; text-align:center}
+</style>
+<![endif]-->
+<!--[if IE 7]>
+<style type="text/css">
+.partl1-b li{text-align:left;line-height:17px; }
+</style>
+<![endif]-->
+<meta name="baidu-site-verification" content="vFgda4t5qo" />
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ac7307581f39576782d4b1f0cea54c2c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<div class="wrapper">
+<!--toubu-->
+<div class="toubu">
+    	<div class="tb_top">
+        	<h1 class="logo"><a href="{aspcms:siteurl}/"><img class="logo" src="images/logo.png"  /></a></h1>
+            <div class="shops">
+               <a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a> | 
+ <a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a>
+            </div>
+        </div>
+        <div class="tb_middle">
+        	<ul class="daohang clearfloat">
+            	<li><a href="/">网站首页</a></li>
+               
+            {aspcms:navlist}
+			    <li><a href="[navlist:link]">[navlist:name]</a></li>
+                {/aspcms:navlist}
+            </ul>
+          
+        </div>    
+        <div class="tb_bot">
+        	<div class="banner" id="focus">
+            	<ul>
+            	<li><a href="{aspcms:sitepath}/productlist/4_1.html"><img src="images/img_05.jpg" alt="压力传感器" /></a></li>
+                <li><a href="{aspcms:sitepath}/productlist/4_1.html"><img src="images/img_06.jpg"  alt="压力变送器"  /></a></li>
+                <li><a href="{aspcms:sitepath}/productlist/4_1.html"><img src="images/img_07.jpg"  alt="数字压力表"   /></a></li>
+                <li><a href="{aspcms:sitepath}/productlist/4_1.html"><img src="images/img_08.jpg"  alt="温度变送器"  /></a></li>
+                </ul>
+            </div>
+        	
+        </div>
+    </div>  	
+<!--end toubu-->
+<!--body-->
+<div class="body">
+    <div id="part-l">
+	    <div id="partl1">
+		   <div id="partl1-l">
+		      <img src="images/gywm.jpg"  alt="关于我们"/>
+			  <div class="partl1-b">
+			    <img style="float:left;margin-right:10px;"src="images/gs.jpg"  alt="HCP,仪器仪表"/>
+				<p>　HCP仪表是青岛华凌科技有限公司的自主仪表品牌。HCP仪表生产基地在南京，销售中心在青岛。品牌创立宗旨是为大众生产性价比高的仪器仪表。经过多年的技术改进和市场磨砺，HCP仪表在军工、汽车、化工、造纸、电厂等无数个行业得到广泛应用。我们的优势产品有军用压力传感器、扩散硅式压力变送器、容式3051外型差压变送器、平膜压力变送器、风差压变送器、液位变送器、数字压力表、温度传感器、一体化温度变送器、温度模块等仪表产品。欢迎大家来电咨询。</p>
+			  </div>
+		   </div>
+		   <div id="partl1-r">
+		      <img src="images/xwzx.jpg" alt="新闻中心" />
+			  <div class="partl1-b">
+			     <ul>
+                      {aspcms:news sort=1 num=10 }  
+					<li><a href="[news:link]">[news:title len=18]</a> <span>[news:date style=yy-m-d]</span></li>
+					{/aspcms:news} 
+				  </ul>
+			  </div>
+		   </div>
+		</div>
+		<div id="partl1">
+		   <div id="partl1-tt"><a href="/productlist/4_1.html" class="SPAN">+MORE</a></div>
+		   <div id="partl1-bb">
+		      <ul id="sycp">
+           {aspcms:product sort=4 num=20  order=order }
+			<li>
+            	<div class="img"><a href="[product:link]"  ><img src="[product:pic]"  alt="[product:title]" onload="AutoResizeImage(120,115,this)" /></a></div>
+                <a href="[product:link]" >[product:title len=14]</a>
+            </li>
+			{/aspcms:product}
+			  </ul>
+		   </div>
+           <div id="product" style="background:#ffffff">
+	 
+		 
+	</div>
+		</div>
+	</div>
+	<div id="part-r">
+	         <div id="partr1">
+			<img src="images/cpfl.gif" alt="产品分类" />
+			<ul>    		            
+			{aspcms:navlist type=4}
+				<li><img src="images/t_line.gif" alt="[news:title]" />&nbsp;<a title="[navlist:name]" href="[navlist:link]">[navlist:name]</a> </li>
+			{/aspcms:navlist}
+
+		  </ul>  
+		</div>
+        
+        <div id="partr1">
+			<img src="images/zxcp.gif" alt="最新产品" />
+			<ul>    		            
+			 {aspcms:product sort=4 num=6 }
+				<li><img src="images/t_line.gif" alt="[product:title]" />&nbsp;<a title="[product:title]" href="[product:link]">[product:title len=18]</a> </li>
+			{/aspcms:product}
+
+		  </ul>  
+		</div>
+        
+		<div id="partr1">
+			<img src="images/lxfs.jpg" alt="联系方式"  />
+			<p>电话：{aspcms:companyphone} </p>
+			<p>传真：{aspcms:companyfax}</p>
+			<p>邮箱：{aspcms:companyemail} </p>
+			<p>商话1：{aspcms:companymobile}</p>
+			<p>商话2：{aspcms:companycontact}</p>
+			<p>地址：{aspcms:companyaddress} </p>
+		</div>
+	</div>
+</div>
+<!--end body-->
+
+<div id="link" class="clearfloat">
+	<ul>
+     <li style="font-weight:700">友情链接：</li>
+    	{aspcms:linklist  type=font}
+       
+        	<li><img src="images/jtt.jpg"  alt="[linklist:name]"/>&nbsp;<a href="[linklist:link]" target="_blank">[linklist:name]</a></li> 
+        {/aspcms:linklist}
+ 	</ul>
+</div>
+<!--foot-->
+{aspcms:foot}
+<!--end foot-->
+
+
+    
+  
+</div>
+</body>
+</html>

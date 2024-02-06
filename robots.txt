@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /templates/
+Disallow: /config/
+Disallow: /css/
+Disallow: /images/
+Disallow: /plug/
+Disallow: /inc/
+Disallow: /*?*
+Sitemap: http://www.hcp-cn.com/sitemap.html

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>{aspcms:sortname}-{aspcms:sitetitle}</title>
+<meta name="Keywords" content="[about:keyword]" >
+<meta name="Description" content="[about:desc]" >
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link rel="stylesheet" type="text/css" href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/style.css"/>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/public.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ac7307581f39576782d4b1f0cea54c2c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+
+<!--toubu-->
+{aspcms:top} 
+<div id="weizhi"><a href="{aspcms:siteurl}/">首页</a>{aspcms:position} / [position:link]{/aspcms:position}</div>
+<!--body-->
+<div class="body clearfix" id="lx">
+    <div id="part-l">
+	   
+		<div id="partl1">
+		   <div id="partl1-bb">
+		      <div class="neirong_show">
+              		<p style="text-align:center; width:830px; margin-left:-3px;">
+                    <iframe id="gszr" name="gszr" frameborder="0" scrolling="no" align="middle" style="width:1000px; height:260px; margin:0 auto; " src="/map.html" ></iframe>
+                    </p>
+              		[about:info]
+              </div>
+		   </div>
+		</div>
+        
+	</div>
+
+	<div id="part-r">
+
+		<div class="leftnav">
+			<h2>联系方式</h2>
+			<p>电话：{aspcms:companyphone} </p>
+			<p>传真：{aspcms:companyfax}</p>
+			<p>邮箱：{aspcms:companyemail} </p>
+			<p>商话1：{aspcms:companymobile}</p>
+			<p>商话2：{aspcms:companycontact}</p>
+			<p>地址：{aspcms:companyaddress} </p>
+		</div>
+	</div>
+
+</div>
+<!--end body-->
+
+<!--foot-->
+{aspcms:foot}
+<!--end foot-->
+</div>
+
+<!--end toubu-->
+
+</body>
+</html>

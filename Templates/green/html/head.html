@@ -1,0 +1,147 @@
+<!--js 部分-->
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/myfocus-2.0.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+var tabTitle = ".tab  span";
+var tabContent = ".tab .shen";
+$(tabTitle + ":first").addClass("on");
+$(tabContent).not(":first").hide();
+$(tabTitle).unbind("hover").bind("hover", function(){
+var text = $(this).text();
+$(this).siblings("span").removeClass("on").end().addClass("on");
+if(text == "行业应用"){
+	$(".amore").attr("href","/about/?14.html")
+}else{
+	$(".amore").attr("href","/newslist/?109_1.html")
+}
+
+
+var index = $(tabTitle).index( $(this) );
+$(tabContent).eq(index).siblings(tabContent).hide().end().show();
+});
+
+$(".topn").toggle(function(){
+	$(this).next("ul").show();
+},function(){
+	$(this).next("ul").hide();
+})
+
+});
+</script>
+<style type="text/css">
+.sunnav{ display:none}
+</style>
+
+<!--top部分-->
+<div class="index_nav">
+  <div class="fixed_contant clearfix"> 
+    
+    <!--logo 部分--> 
+    <a href="/" class="logo"><img src="images/logo.png" style="height:70px;margin-top:10px"/></a> 
+    
+    <!--top链接部分--> 
+    <div class="site_nav">
+    <!--<ul class="clearfix">
+    	<li><a href="/about/?8.html">公司简介</a></li><li><a href="/about/?65.html">联系我们</a></li><li><a href="/about/?5.html">技术服务</a></li><li><a href="/about/?1.html" style="border-right:none">行业应用</a></li>
+    </ul>-->
+    <img src="images/header_tel.png" class="tel" style="margin-top:40px;"/>
+    </div>
+    
+  </div>
+</div>
+
+
+<!--nav部分  class="selected2" -->
+<div class="nav">
+  <ul class="nav_list clearfix">
+    <li class="drop-menu-effect"><a href="/" ><span>首页</span></a></li>
+	{aspcms:navlist num=8}
+    <li class="drop-menu-effect"><a href="[navlist:link]" {if:[navlist:sortid]=[navlist:cursortid]}class="selected2"{end if} >[navlist:name]</a>{if:[navlist:subcount]>0}
+      <ul class="submenu" >{aspcms:subnavlist type=[navlist:sortid] num=8}
+        <li><a href="[subnavlist:link]">[subnavlist:name len=8]</a></li>
+        {/aspcms:subnavlist}
+        
+      </ul>
+      {end if} 
+    </li>
+    {/aspcms:navlist}
+  </ul>
+</div>
+
+<script>
+function dropMenu(obj){
+		$(obj).each(function(){
+			var theSpan = $(this);
+			var theMenu = theSpan.find(".submenu");
+			var tarHeight = theMenu.height();
+			theMenu.css({height:0,opacity:0});
+			
+			var t1;
+			
+			function expand() {
+				clearTimeout(t1);
+				theSpan.find('a').addClass("selected");
+				theMenu.stop().show().animate({height:tarHeight,opacity:1},0);
+				
+			}
+			
+			function collapse() {
+				clearTimeout(t1);
+				t1 = setTimeout(function(){
+					theSpan.find('a').removeClass("selected");
+					theMenu.stop().animate({height:0,opacity:0},0,function(){
+						$(this).css({display:"none"});
+					});
+				}, 0);
+			}
+			
+			theSpan.hover(expand, collapse);
+			theMenu.hover(expand, collapse);
+		});
+	}
+
+$(document).ready(function(){
+	
+	dropMenu(".drop-menu-effect");
+	
+
+});
+</script> 
+
+
+<div class="flv">
+	<div id="myFocus"><!--焦点图盒子-->
+		<div class="pic"><!--图片列表-->
+			<ul>
+				<li><a href="#1"><img src="images/banner.jpg" thumb=""  /></a></li>
+				<li><a href="#2"><img src="images/banner2.jpg" thumb=""  /></a></li>
+				<!--<li><a href="#2"><img src="images/banner3.jpg" thumb=""  /></a></li>-->
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript"> 
+	myFocus.set
+	(
+		{
+		id:'myFocus',//焦点图盒子ID
+		pattern:'mF_YSlider',//风格应用的名称
+		time:5,//切换时间间隔(秒)
+		trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+		//width:1920,//设置图片区域宽度(像素)
+		height:393,//设置图片区域高度(像素)
+		txtHeight:'0'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+		}
+		,true
+	);   
+	   
+	</script>
+	
+	<script>
+	$(function(){
+		$("#myFocus ul li:eq(0)").show();
+		
+	})
+   </script> 
+	
+</div><!--end banner-->
